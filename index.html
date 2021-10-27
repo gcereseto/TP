@@ -11,6 +11,7 @@
   <title>Inicio</title>
   <link rel="icon" href="images/Logos/G-gestion.png" />
   <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/efa62af091.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -103,43 +104,70 @@
     <!-- PODES SER INVERSOR (Se pasa a index3.html para cumplir con requerimiento de TP)-->
     <!--  <h2><a id="inversor"></a>Podés ser inversor</h2>
 
-  <div id="invitacion">
+   <div id="invitacion">
+     <div id="bienvenida">
+       <img src="images/Inversor/pexels-max-vakhtbovych-7018400.jpg" alt="Invitación" />
+     </div>
 
-    <div id="bienvenida">
-      <img src="images/Inversor/pexels-max-vakhtbovych-7018400.jpg" alt="Invitación">
-    </div>
+     <div id="consultas">
+       <p class="texto">
+         Si estás interesado en ser inversor, o tenés consultas para
+         hacernos, un ejecutivo te contactará.
+       </p>
+       <p class="texto">Dejanos tus datos:</p>
+       <form action="mailto:inversores@gestion.com.ar?Subject=Mis%20datos%20Inversor" method="post"
+         enctype="text/plain">
+         <div class="formdata">
+           <label for="Nombres">NOMBRES</label>
+           <input type="text" name="Nombres" id="Nombres" size="50" pattern="[A-Za-z]{2,25}"
+             placeholder="Ingresá tu/s nombre/s" required /><br />
+           <label for="Apellido">APELLIDO</label>
+           <input type="text" name="Apellido" id="Apellido" size="50" pattern="[A-Za-z]{2,25}"
+             placeholder="Ingresá tu apellido" required /><br />
+
+           <label for="email">Email</label>
+           <input type="email" name="email" id="email" size="30" placeholder="nnnnnnnnnnnn@nnnnnnn.nnn.nn" /><br />
+
+           <label for="nrotel">Teléfono móvil, sin 0 ni 15:</label>
+           <input type="tel" name="nrotel" id="nrotel" pattern="[0-9]{10}" placeholder="10 dígitos numéricos" size="15"
+             required /><br />
+
+           <input type="submit" name="send" id="send" value="Enviar datos" />
+           <input type="reset" name="clear" id="clear" value="Borrar datos" />
+         </div>
+       </form>
+     </div>
+   </div>
 
 
-    <div id="consultas">
-      <p class="texto">Si estás interesado en ser inversor, o tenés consultas para hacernos, un ejecutivo te contactará.
-      </p>
-      <p class="texto">Dejanos tus datos:
-      </p>
-      <form action="mailto:inversores@gestion.com.ar?Subject=Mis%20datos%20Inversor" method="post" enctype="text/plain">
-        <div class="formdata">
-          <label for="Nombres">NOMBRES</label>
-          <input type="text" name="Nombres" id="Nombres" size="50" pattern="[A-Za-z]{2,25}"
-            placeholder="Ingresá tu/s nombre/s" required /><br />
-          <label for="Apellido">APELLIDO</label>
-          <input type="text" name="Apellido" id="Apellido" size="50" pattern="[A-Za-z]{2,25}"
-            placeholder="Ingresá tu apellido" required /><br />
+   PARA COMUNICARNOS, NUESTRAS OFICINAS
+   <div>
 
-          <label for="email">Email</label>
-          <input type="email" name="email" id="email" size="30" placeholder="nnnnnnnnnnnn@nnnnnnn.nnn.nn" /><br />
+     <h2><a id="estamos"></a>Para comunicarnos, nuestra oficinas</h2>
+     <div id="contacto">
+       <div id="contacto1">
 
-          <label for="nrotel">Teléfono móvil, sin 0 ni 15:</label>
-          <input type="tel" name="nrotel" id="nrotel" pattern="[0-9]{10}" placeholder="10 dígitos numéricos" size="15"
-            required /><br />
+         <h4>Mandanos un Whatsapp</h4>
 
-          <input type="submit" name="send" id="send" value="Enviar datos" />
-          <input type="reset" name="clear" id="clear" value="Borrar datos" />
-        </div>
-      </form>
-    </div>
+         <i class="far fa-comment"></i><br>
 
-  </div>
-  
- -->
+         <p class=telef>11 2211 2211
+
+
+         </p>
+       </div>
+       <div id="contacto2">
+         <h4>Estamos en Maipú 374 - piso 5 - CABA</h4>
+
+         <iframe
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0115373333724!2d-58.37891328519523!3d-34.60386976501218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacdcdf03e5f%3A0x7c702d1fff3cbd9a!2sMaip%C3%BA%20374%2C%20C1006%20ACA%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1635204725127!5m2!1ses!2sar"
+           style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+       </div>
+     </div>
+
+   </div> -->
+
+
   </div>
 
   <footer>
