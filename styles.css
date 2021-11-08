@@ -36,10 +36,13 @@ a {
   font-size: 20px;
   text-decoration: none;
   text-decoration-line:overline;
+  transition: all 0.5s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 a:hover {
   background-color: #cfd977;
+  box-shadow: 0px 0px 10px #3ac16d;
 }
 
 img {
