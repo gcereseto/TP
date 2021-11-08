@@ -10,6 +10,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet" />
   <title>Gestión de recuperos de activos</title>
   <link rel="icon" href="images/Logos/G-gestion.png" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css" />
   <script src="https://kit.fontawesome.com/efa62af091.js" crossorigin="anonymous"></script>
 </head>
@@ -20,6 +23,7 @@
     <a href="index2.html#logramos">Nosotros y lo que logramos</a>
     <a href="#inversor">Podés ser inversor</a>
   </nav>
+
 
   <header>
     <div class="frases">
@@ -74,35 +78,61 @@
       </div>
     </div>
 
+    <!-- TOAST CON BS -->
 
-    <!-- PARA COMUNICARNOS, NUESTRAS OFICINAS -->
-    <div>
+    <div class="container my-5">
+      <button type="button" class="btn btn-info" id="liveToastBtn">Próximo lanzamiento<br>FEBRERO 2022<br>-> Hacé click
+        aquí </button>
 
-      <h2><a id="estamos"></a>Para comunicarnos, nuestra oficinas</h2>
-      <div id="contacto">
-        <div id="contacto1">
+      <div class="position-fixed top-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+            <img class="img-fluid" src="images/Inversor/pexels-pixabay-327540.jpg" alt="Felicitaciones">
 
-          <h4>Mandanos un Whatsapp</h4>
-
-          <i class="far fa-comment"></i><br>
-
-          <p class=telef>11 2211 2211
+          </div>
+          <div class="toast-body">
+            <strong class="me-auto">Inversión en<br>PROPIEDAD HORIZONTAL<br>DESDE POZO</strong>
 
 
-          </p>
-        </div>
-        <div id="contacto2">
-          <h4>Estamos en Maipú 374 - piso 5 - CABA</h4>
+          </div>
+          <div class="toast-body"><small>Comunicate con nosotros<br>¡Sos uno de los primeros en enterarte!</small>
+          </div>
+          <div class="toast-body"><button type="button" class="btn-close" data-bs-dismiss="toast"
+              aria-label="Close"></button></div>
 
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0115373333724!2d-58.37891328519523!3d-34.60386976501218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacdcdf03e5f%3A0x7c702d1fff3cbd9a!2sMaip%C3%BA%20374%2C%20C1006%20ACA%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1635204725127!5m2!1ses!2sar"
-            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
 
+
+
+      <!-- PARA COMUNICARNOS, NUESTRAS OFICINAS -->
+      <div>
+
+        <h2><a id="estamos"></a>Para comunicarnos, nuestra oficinas</h2>
+        <div id="contacto">
+          <div id="contacto1">
+
+            <h4>Mandanos un Whatsapp</h4>
+
+            <i class="far fa-comment"></i><br>
+
+            <p class=telef>11 2211 2211
+
+
+            </p>
+          </div>
+          <div id="contacto2">
+            <h4>Estamos en Maipú 374 - piso 5 - CABA</h4>
+
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0115373333724!2d-58.37891328519523!3d-34.60386976501218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacdcdf03e5f%3A0x7c702d1fff3cbd9a!2sMaip%C3%BA%20374%2C%20C1006%20ACA%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1635204725127!5m2!1ses!2sar"
+              style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
-
   <footer>
     Web: Gabriel Cereseto 2021 <br />
     GESTIÓN DE PRÉSTAMOS Y COBRANZAS S.A.<br />
@@ -110,6 +140,26 @@
   </footer>
 
   <script src="validate.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+
+  <script>
+
+    var toastTrigger = document.getElementById('liveToastBtn')
+    var toastLiveExample = document.getElementById('liveToast')
+    if (toastTrigger) {
+      toastTrigger.addEventListener('click', function () {
+        var toast = new bootstrap.Toast(toastLiveExample)
+
+        toast.show()
+      })
+    }
+
+  </script>
+
 </body>
 
 </html>
